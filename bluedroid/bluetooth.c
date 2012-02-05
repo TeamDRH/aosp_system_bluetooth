@@ -169,7 +169,7 @@ int bt_enable() {
 
         ret = ioctl(hci_sock, HCIDEVUP, HCI_DEV_ID);
 
-        LOGI("bt_enable: ret: %d, errno: %d", ret, errno);
+//DRH        LOGI("bt_enable: ret: %d, errno: %d", ret, errno);
         if (!ret) {
             break;
         } else if (errno == EALREADY) {
